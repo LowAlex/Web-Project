@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planets of the Solar System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <h1 class="main-title">Explore the Planets of the Solar System!</h1>
+    <div class="content">
+      <img :src="currentItem.img" :alt="currentItem.title">
+      <div class="title-container" @click="toggleView">
+        <h1 v-if="showTitle">{{ currentItem.title }}</h1>
+        <p v-else>{{ currentItem.desc }}</p>
+      </div>
+      <div class="navigation">
+        <button @click="prevItem">Previous</button>
+        <button @click="nextItem">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.45/dist/vue.global.js"></script>
+  <script type="module" src="data/data.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
