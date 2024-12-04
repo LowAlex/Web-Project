@@ -22,22 +22,22 @@ export const items = [
     {
       title: "Jupiter",
       desc: "Jupiter is the largest planet in the Solar System, with a massive atmosphere of hydrogen and helium. Its Great Red Spot is a giant storm persisting for centuries.",
-      img: "../img/jupiter.jpeg"
+      img: "./img/jupiter.jpeg"
     },
     {
       title: "Saturn",
       desc: "Saturn is famous for its stunning ring system made of ice and rock. It is the second-largest planet and has more than 80 moons.",
-      img: "../img/saturn.jpeg"
+      img: "./img/saturn.jpeg"
     },
     {
       title: "Uranus",
       desc: "Uranus is an ice giant with a pale blue color due to methane in its atmosphere. It rotates on its side, making its axis nearly parallel to the Sun.",
-      img: "../img/uranus.jpeg"
+      img: "./img/uranus.jpeg"
     },
     {
       title: "Neptune",
       desc: "Neptune, the farthest planet from the Sun, is known for its intense blue color and supersonic winds. It has 14 known moons, including Triton.",
-      img: "../img/neptune.jpeg"
+      img: "./img/neptune.jpeg"
     }
   ];
   
