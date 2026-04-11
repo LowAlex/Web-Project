@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.http import JsonResponse
+from .models import Planet
 
-# Create your views here.
+
+def planets_api(request):
+    planets = list(Planet.objects.values('title', 'desc', 'img'))
+    return JsonResponse(planets, safe=False)
